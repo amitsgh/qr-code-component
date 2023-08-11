@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+/* variables */
+:root {
+    --font-family: 'Outfit', sans-serif;
+    --font-size: 15px;
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+
+    --color-primary: hsl(0, 0%, 100%); /* White */
+    --color-background: hsl(212, 45%, 89%); /* Light gray */
+    --color-text-light: hsl(220, 15%, 55%); /* Grayish blue */
+    --color-text-dark: hsl(218, 44%, 22%); /* Dark blue */
+
+    --card-width: 322px;
+    --card-height: 500px;
+
+    --image-width: 286px;
+    --image-height: 287px;
+}
+
+/* global styling */
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    background-color: var(--color-background);
+    font-family: var(--font-family);
+}
+
+.card {
+    box-shadow: 5px 10px 15px 0px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    background-color: var(--color-primary);
+    width: var(--card-width);
+    height: var(--card-height);
+    padding: 15px;
+}
+
+img {
+    width: var(--image-width);
+    height: var(--image-height);
+    border-radius: 10px;
+}
+
+.text {
+    display: block;
+    padding: 5px;
+}
+
+.text--dark {
+    font-size: calc( 1.5 * var(--font-size));
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-dark);
+    margin: 15px 0;
+}
+
+.text--light {
+    font-size: calc(1.1 * var(--font-size));
+    font-weight: var(--font-weight-normal);
+    color: var(--color-text-light);
+}
+
+
