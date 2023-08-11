@@ -40,6 +40,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
  - how to pre-define variables 
  - how flexbox and flexbox items works
  - difference btw justify-content and align-items
+ - learn about bem convention for css
 
 
 #### Flexbox
